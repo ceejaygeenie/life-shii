@@ -1,0 +1,808 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+}
+
+/* up part  */
+
+nav {
+    background: tan;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+nav ul {
+    display: flex;
+    
+    /* justify-content: space-around; */
+}
+
+nav ul li {
+    /* display: flex; */
+    margin: 0 15px;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+    list-style: none;
+
+}
+
+a:hover {
+    border-bottom: 2px solid black;
+}
+
+.menu {
+    display: none;
+}
+
+
+/* hero section */
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/charlotte-knight-aUw2sgqnG9s-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+
+}
+
+.hero-b {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.hero .hero-b h1 {
+    font: 600;
+    font-size: 100px;
+    text-transform: capitalize;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero .hero-b h3 {
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+.hero .hero-b h1 span {
+    color: #00b7ff;
+}
+
+/* future section */
+
+.future {
+    width: 80vw;
+    height: 100vh;
+    background-color: gray;
+    margin-bottom: 100px;
+    border-radius: 25px;
+    margin: 100px auto;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    background-image: url(../images/priscilla-du-preez-aPa843frIzI-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+
+.left h1 {
+    font: 600;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+
+}
+
+.left {
+    padding: 20px;
+    background-color: white;
+    border-radius: 25px;
+
+}
+
+.left span {
+    color: red;
+}
+
+.right h1 {
+    font: 600;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+
+}
+
+.right {
+    padding: 20px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.right span {
+    color: tomato;
+}
+
+.right p {
+    width: 70%;
+}
+
+/* feature section */
+
+.feature {
+    width: 80vw;
+    height: 100vh;
+    background-color: gray;
+    margin-bottom: 100px;
+    border-radius: 25px;
+    margin: 100px auto;
+    align-content: center;
+    background-image: url(../images/etornam-ahiator-3fhZrKQVSJs-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+
+.feature h1 {
+    text-align: center;
+    font: 600;
+    font-size: 50px;
+    text-transform: capitalize;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.feature p {
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.addage {
+    width: 80vw;
+    height: 50vh;
+    margin-bottom: 100px;
+    border-radius: 25px;
+    margin: 100px auto;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+
+}
+
+.anchor h3 {
+    font-size: 50px;
+
+}
+
+/* .anchor p {
+    width: 80%;
+} */
+
+.anc {
+    width: 70px;
+    height: 70px;
+    margin: 8px auto;
+}
+
+.pillar h3 {
+    font-size: 50px;
+
+}
+
+/* .pillar p {
+    width: 80%;
+} */
+
+.apple h3 {
+    font-size: 50px;
+
+}
+
+/* .apple p {
+    width: 80%;
+} */
+
+.pillar, .apple, .anchor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    width: 60%;
+    
+}
+
+.sos {
+    width: 30px;
+    height: 30px;
+}
+
+
+footer {
+    width: 100vw;
+    padding: 30px;
+    background: tan;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 18px;
+    font-size: 12px;
+}
+
+footer h4 {
+    margin-bottom: 18px;
+}
+
+footer a:hover {
+    border-bottom: none;
+}
+
+/* for tablets */
+
+@media (max-width: 768px) { 
+    /* up part  */
+
+nav {
+    background: tan;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+nav ul {
+    display: flex;
+    
+    /* justify-content: space-around; */
+}
+
+nav ul li {
+    /* display: flex; */
+    margin: 0 15px;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    list-style: none;
+
+}
+
+a:hover {
+    border-bottom: 2px solid black;
+}
+
+.menu {
+    display: none;
+}
+
+/* hero section */
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/charlotte-knight-aUw2sgqnG9s-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+
+}
+
+.hero-b {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.hero .hero-b h1 {
+    font: 600;
+    font-size: 80px;
+    text-transform: capitalize;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero .hero-b h3 {
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+.hero .hero-b h1 span {
+    color: #00b7ff;
+}
+
+/* future section */
+
+.future {
+    width: 80vw;
+    height: 100vh;
+    background-color: gray;
+    margin-bottom: 100px;
+    border-radius: 25px;
+    margin: 100px auto;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    background-image: url(../images/priscilla-du-preez-aPa843frIzI-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+
+.left h1 {
+    font: 600;
+    font-size: 36px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+
+}
+
+.left {
+    padding: 20px;
+    background-color: white;
+    border-radius: 25px;
+
+}
+
+.left span {
+    color: red;
+}
+
+.right h1 {
+    font: 600;
+    font-size: 36px;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+
+}
+
+.right {
+    padding: 20px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.right span {
+    color: tomato;
+}
+
+.right p {
+    width: 80%;
+}
+
+/* feature section */
+
+.feature {
+    width: 80vw;
+    height: 100vh;
+    background-color: gray;
+    margin-bottom: 100px;
+    border-radius: 25px;
+    margin: 100px auto;
+    align-content: center;
+    background-image: url(../images/etornam-ahiator-3fhZrKQVSJs-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+
+.feature h1 {
+    text-align: center;
+    font: 600;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.feature p {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+footer {
+    width: 100vw;
+    height: 30vh;
+    background: tan;
+}
+
+}
+
+.addage {
+    width: 80vw;
+    height: 50vh;
+    margin-bottom: 100px;
+    border-radius: 25px;
+    margin: 100px auto;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+
+}
+
+.anchor h3 {
+    font-size: 36px;
+
+}
+
+/* .anchor p {
+    width: 80%;
+} */
+
+.anc {
+    width: 50px;
+    height: 50px;
+    margin: 8px auto;
+}
+
+.pillar h3 {
+    font-size: 36px;
+
+}
+
+/* .pillar p {
+    width: 80%;
+} */
+
+.apple h3 {
+    font-size: 36px;
+
+}
+
+/* .apple p {
+    width: 80%;
+} */
+
+.pillar, .apple, .anchor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+/* for small screens */
+
+@media (max-width: 425px) {
+
+    /* up part  */
+
+    nav {
+        width: 100vw;
+        background: olivedrab;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    
+    
+    }
+    
+    nav ul {
+        display: flex;
+        
+        /* justify-content: space-around; */
+    }
+    
+    nav ul li {
+        display: none;
+        margin: 0 15px;
+        list-style: none;
+        text-transform: capitalize;
+    }
+    
+    nav ul li a {
+        list-style: none;
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        list-style: none;
+    
+    }
+    
+    a:hover {
+        border-bottom: 2px solid gold;
+    }
+
+    .menu {
+        display: initial;
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* hero section */
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/charlotte-knight-aUw2sgqnG9s-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+
+}
+
+.hero-b {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.hero .hero-b h1 {
+    font: 600;
+    font-size: 62px;
+    text-transform: capitalize;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero .hero-b h3 {
+    font-size: 16px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+.hero .hero-b h1 span {
+    color: #00b7ff;
+}
+
+/* future section */
+
+.future {
+    width: 80vw;
+    height: 100vh;
+    background-color: gray;
+    margin-bottom: 100px;
+    border-radius: 25px;
+    margin: 100px auto;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    background-image: url(../images/priscilla-du-preez-aPa843frIzI-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    flex-wrap: wrap;
+
+}
+
+.left h1 {
+    font: 600;
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+
+}
+
+.left {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 25px;
+
+}
+
+.left span {
+    color: red;
+}
+
+.right h1 {
+    font: 600;
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+
+}
+
+.right {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.right span {
+    color: tomato;
+}
+
+.right p {
+    width: 80%;
+}
+
+/* feature section */
+
+.feature {
+    width: 80vw;
+    height: 100vh;
+    background-color: gray;
+    margin-bottom: 100px;
+    border-radius: 25px;
+    margin: 100px auto;
+    align-content: center;
+    background-image: url(../images/etornam-ahiator-3fhZrKQVSJs-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+
+.feature h1 {
+    text-align: center;
+    font: 600;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.feature p {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+footer {
+    width: 100vw;
+    height: 30vh;
+    background: olivedrab;
+}
+
+.addage {
+    width: 80vw;
+    height: 100vh;
+    margin-bottom: 100px;
+    border-radius: 25px;
+    margin: 100px auto;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.anchor h3 {
+    font-size: 32px;
+
+}
+
+/* .anchor p {
+    width: 80%;
+} */
+
+.anc {
+    width: 40px;
+    height: 40px;
+    margin: 8px auto;
+}
+
+.pillar h3 {
+    font-size: 32px;
+
+}
+
+/* .pillar p {
+    width: 80%;
+} */
+
+.apple h3 {
+    font-size: 32px;
+
+}
+
+/* .apple p {
+    width: 80%;
+} */
+
+.pillar, .apple, .anchor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.sos {
+    width: 25px;
+    height: 25px;
+}
+
+
+}
+
